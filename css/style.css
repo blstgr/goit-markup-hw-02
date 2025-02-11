@@ -34,7 +34,7 @@
   --logo-font-weight: 700;
   --logo-font-size: 18px;
   --logo-line-height: 1.17;
-  --logo-letterspacing: 0.03em;
+  --logo-letter-spacing: 0.03em;
   --logo-color: var(--color-accent);
 
   --radius: 4px;
@@ -128,8 +128,8 @@ address li,
 .nav-link,
 .header-contact-link {
   font-weight: 500;
-  letter-spacing: var(-text-letter-spacing);
-  color: var(--coloor-base-dark);
+  letter-spacing: var(--text-letter-spacing);
+  color: var(--color-base-dark);
   text-decoration: none;
   font-style: normal;
 }
