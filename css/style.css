@@ -68,7 +68,7 @@ body {
   text-transform: uppercase;
 }
 
-.logo span {
+.logo-highlight {
   color: var(--color-base-dark);
 }
 
@@ -77,6 +77,18 @@ header,
   max-width: 1128px;
   margin: 0 auto;
   padding: 24px 16px;
+}
+header {
+  overflow: hidden;
+}
+
+nav {
+  float: left;
+}
+
+.header-contact {
+  float: right;
+  font-style: normal;
 }
 
 section {
@@ -106,11 +118,6 @@ address ul > li:last-child {
   margin-right: 0;
 }
 
-nav,
-address {
-  display: inline-block;
-}
-
 nav ul,
 address ul,
 nav li,
@@ -120,11 +127,6 @@ address li,
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.header-contact {
-  float: right;
-  font-style: normal;
 }
 
 .nav-link,
