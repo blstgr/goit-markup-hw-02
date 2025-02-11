@@ -52,6 +52,7 @@
 
 body {
   background-color: var(--bg-color);
+  font-family: var(--font-family);
   color: var(--text-color);
   font-optical-sizing: auto;
 }
