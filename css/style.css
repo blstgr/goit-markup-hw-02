@@ -138,6 +138,7 @@ address li,
 }
 .header-contact-link {
   font-weight: var(--text-font-weight);
+  color: var(--color-base);
 }
 
 .nav-link:hover,
@@ -149,16 +150,12 @@ address li,
 
 .nav-link:focus,
 .header-contact-link:focus {
-  color: var(--color-accent);
+  color: var(--color-accent-dark);
 }
 
 p,
 img {
   margin: 0;
-}
-
-img {
-  display: block;
 }
 
 .title-lg,
@@ -271,11 +268,13 @@ button {
   box-shadow: var(--card-shadow);
   background-color: var(--color-white);
 }
+
 .card .title-sm {
   margin-top: 32px;
   margin-right: 16px;
   margin-left: 16px;
 }
+
 .card .text {
   margin-right: 16px;
   margin-bottom: 32px;
@@ -297,6 +296,7 @@ button {
   color: var(--color-base-light);
 }
 .footer .logo {
+  display: block;
   margin-bottom: 16px;
 }
 .footer .logo span {
