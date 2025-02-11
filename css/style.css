@@ -23,7 +23,7 @@
   --h1-line-height: 1.07;
 
   --h2-size: 36px;
-  --h2-line-height: 1.1;
+  --h2-line-height: 1.11;
 
   --h3-size: 20px;
   --h3-line-height: 1.2;
@@ -58,11 +58,11 @@ body {
 }
 
 .logo {
-  display: inline-block;
   font-family: var(--logo-font-family);
   font-weight: var(--logo-font-weight);
   font-size: var(--logo-font-size);
   line-height: var(--logo-line-height);
+  letter-spacing: var(--logo-letter-spacing);
   color: var(--logo-color);
   text-decoration: none;
   text-transform: uppercase;
@@ -130,6 +130,7 @@ address li,
 .nav-link,
 .header-contact-link {
   font-weight: 500;
+  line-height: var(--text-line-height);
   letter-spacing: var(--text-letter-spacing);
   color: var(--color-base-dark);
   text-decoration: none;
@@ -140,7 +141,9 @@ address li,
 }
 
 .nav-link:hover,
-.header-contact-link:hover {
+.header-contact-link:hover,
+.nav-link:active,
+.header-contact-link:active {
   color: var(--color-accent-dark);
 }
 
@@ -164,13 +167,13 @@ img {
   margin: 0;
   font-weight: var(--h-font-weight);
   color: var(--h-color);
+  letter-spacing: var(--text-letter-spacing);
 }
 
 .title-lg {
   margin-bottom: 48px;
   font-size: var(--h1-size);
   line-height: var(--h1-line-height);
-  letter-spacing: var(--text-letter-spacing);
 }
 
 .title-md {
@@ -268,27 +271,34 @@ button {
   box-shadow: var(--card-shadow);
   background-color: var(--color-white);
 }
-
-.card-footer {
-  padding: 32px 16px;
+.card .title-sm {
+  margin-top: 32px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.card .text {
+  margin-right: 16px;
+  margin-bottom: 32px;
+  margin-left: 16px;
 }
 
 .footer {
+  padding: 100px 16px;
   background-color: var(--color-base-dark);
   font-weight: var(--text-font-weight);
+}
+
+.footer .text,
+.footer .logo {
+  max-width: 1128px;
+  margin: 0 auto;
 }
 .footer .text {
   color: var(--color-base-light);
 }
-
 .footer .logo {
   margin-bottom: 16px;
 }
-
 .footer .logo span {
   color: var(--color-base-light);
-}
-
-.footer-content {
-  padding: 100px 16px;
 }
