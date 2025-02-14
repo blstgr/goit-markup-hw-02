@@ -76,7 +76,6 @@ header,
 .footer-content {
   max-width: 1128px;
   margin: 0 auto;
-  padding: 24px 16px;
 }
 header {
   overflow: hidden;
@@ -93,11 +92,9 @@ nav {
 
 section {
   text-align: center;
-  padding: 120px 16px;
 }
 
 section.section-hero {
-  padding: 188px 472px;
   background-color: var(--color-base-dark);
   text-align: center;
 }
@@ -123,10 +120,8 @@ address ul,
 nav li,
 address li,
 .list-unstyled {
-  display: inline-block;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 .nav-link,
@@ -209,10 +204,8 @@ button {
 }
 
 .btn {
-  padding: 16px 32px;
   background-color: var(--color-accent);
   border: none;
-  border-radius: var(--radius);
   box-shadow: var(--btn-shadow);
   font-weight: var(--btn-font-weight);
   color: var(--color-white);
@@ -235,39 +228,11 @@ button {
   margin: 0 auto;
 }
 
-.col > * {
-  float: left;
-  margin-right: 24px;
-  margin-bottom: 24px;
-  vertical-align: top;
-}
-
-.col > *:last-child {
-  margin-right: 0;
-}
-
-.col-4 > * {
-  width: calc((100% - (3 * 24px)) / 4);
-}
-
-.col-3 > * {
-  width: calc((100% - (2 * 24px)) / 3);
-}
-
-.col-3 li:nth-child(3n) {
-  margin-right: 0;
-}
-
 .text-align-left {
   text-align: left;
 }
 
-.hide {
-  display: none;
-}
-
 .card {
-  box-shadow: var(--card-shadow);
   background-color: var(--color-white);
 }
 
@@ -284,7 +249,6 @@ button {
 }
 
 .footer {
-  padding: 100px 16px;
   background-color: var(--color-base-dark);
   font-weight: var(--text-font-weight);
 }
@@ -298,7 +262,6 @@ button {
   color: var(--color-base-light);
 }
 .footer .logo {
-  display: block;
   margin-bottom: 16px;
 }
 .footer .logo span {
