@@ -53,105 +53,15 @@
 body {
   background-color: var(--bg-color);
   font-family: var(--font-family);
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+  letter-spacing: var(--text-letter-spacing);
   color: var(--text-color);
   font-optical-sizing: auto;
 }
 
-.logo {
-  font-family: var(--logo-font-family);
-  font-weight: var(--logo-font-weight);
-  font-size: var(--logo-font-size);
-  line-height: var(--logo-line-height);
-  letter-spacing: var(--logo-letter-spacing);
-  color: var(--logo-color);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.logo-highlight {
-  color: var(--color-base-dark);
-}
-
-header,
-.footer-content {
-  max-width: 1128px;
-  margin: 0 auto;
-}
-header {
-  overflow: hidden;
-}
-
-nav {
-  float: left;
-}
-
-.header-contact {
-  float: right;
-  font-style: normal;
-}
-
-section {
-  text-align: center;
-}
-
-section.section-hero {
-  background-color: var(--color-base-dark);
-  text-align: center;
-}
-
-.section-inverted {
-  background-color: var(--color-base-light);
-}
-
-nav > *,
-nav ul > li,
-address ul > li {
-  margin-right: 40px;
-}
-
-nav > *:last-child,
-nav ul > li:last-child,
-address ul > li:last-child {
-  margin-right: 0;
-}
-
-nav ul,
-address ul,
-nav li,
-address li,
-.list-unstyled {
-  list-style: none;
-  margin: 0;
-}
-
-.nav-link,
-.header-contact-link {
-  font-weight: 500;
-  line-height: var(--text-line-height);
-  letter-spacing: var(--text-letter-spacing);
-  color: var(--color-base-dark);
-  text-decoration: none;
-  font-style: normal;
-}
-.header-contact-link {
-  font-weight: var(--text-font-weight);
-  color: var(--color-base);
-}
-
-.nav-link:hover,
-.header-contact-link:hover,
-.nav-link:active,
-.header-contact-link:active {
-  color: var(--color-accent-dark);
-}
-
-.nav-link:focus,
-.header-contact-link:focus {
-  color: var(--color-accent-dark);
-}
-
-p,
-img {
+.text {
   margin: 0;
 }
 
@@ -182,16 +92,63 @@ img {
   font-size: var(--h3-size);
   font-weight: var(--h-sm-font-weight);
   line-height: var(--h3-line-height);
-  letter-spacing: var(--text-letter-spacing);
 }
 
-.text {
-  color: var(--text-color);
-  font-family: var(--font-family);
-  font-weight: var(--text-font-weight);
-  font-size: var(--text-size);
+.logo {
+  font-family: var(--logo-font-family);
+  font-weight: var(--logo-font-weight);
+  font-size: var(--logo-font-size);
+  line-height: var(--logo-line-height);
+  letter-spacing: var(--logo-letter-spacing);
+  color: var(--logo-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo-highlight {
+  color: var(--color-base-dark);
+}
+
+.nav-link,
+.header-contact-link {
+  font-weight: 500;
   line-height: var(--text-line-height);
   letter-spacing: var(--text-letter-spacing);
+  color: var(--color-base-dark);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.header-contact-link {
+  font-weight: var(--text-font-weight);
+  color: var(--color-base);
+}
+
+.nav-link:hover,
+.header-contact-link:hover,
+.nav-link:active,
+.header-contact-link:active {
+  color: var(--color-accent-dark);
+}
+
+.nav-link:focus,
+.header-contact-link:focus {
+  color: var(--color-accent-dark);
+}
+
+.list-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-hero {
+  background-color: var(--color-base-dark);
+  text-align: center;
+}
+
+.section-inverted {
+  background-color: var(--color-base-light);
 }
 
 .section-hero .title-lg {
@@ -206,7 +163,6 @@ button {
 .btn {
   background-color: var(--color-accent);
   border: none;
-  box-shadow: var(--btn-shadow);
   font-weight: var(--btn-font-weight);
   color: var(--color-white);
   font-family: var(--font-family);
@@ -221,11 +177,6 @@ button {
 .btn:focus {
   outline: none;
   background-color: var(--color-accent-dark);
-}
-
-.list-unstyled {
-  max-width: 1128px;
-  margin: 0 auto;
 }
 
 .text-align-left {
@@ -253,11 +204,6 @@ button {
   font-weight: var(--text-font-weight);
 }
 
-.footer .text,
-.footer .logo {
-  max-width: 1128px;
-  margin: 0 auto;
-}
 .footer .text {
   color: var(--color-base-light);
 }
